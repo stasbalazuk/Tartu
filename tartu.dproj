@@ -162,7 +162,7 @@
         <Android_LauncherIcon72>res_tartu\tere-x-72.png</Android_LauncherIcon72>
         <Android_LauncherIcon96>res_tartu\tere-x-96.png</Android_LauncherIcon96>
         <Android_LauncherIcon48>res_tartu\tere-x-48.png</Android_LauncherIcon48>
-        <VerInfo_Keys>package=com.stalkersts.$(MSBuildProjectName);label=$(MSBuildProjectName);versionCode=8;versionName=2024.04.20;persistent=False;restoreAnyVersion=False;installLocation=preferExternal;largeHeap=False;theme=TitleBar;hardwareAccelerated=true;apiKey=AIzaSyB-sdZWOdXmH3FTPdXClN9b4Vye-ZsRfK4</VerInfo_Keys>
+        <VerInfo_Keys>package=com.stalkersts.$(MSBuildProjectName);label=$(MSBuildProjectName);versionCode=8;versionName=2024.04.20;persistent=False;restoreAnyVersion=False;installLocation=preferExternal;largeHeap=False;theme=TitleBar;hardwareAccelerated=true;apiKey=AIz...</VerInfo_Keys>
         <BT_BuildType>Debug</BT_BuildType>
         <Android_NotificationIcon24>$(BDS)\bin\Artwork\Android\FM_NotificationIcon_24x24.png</Android_NotificationIcon24>
         <Android_NotificationIcon36>$(BDS)\bin\Artwork\Android\FM_NotificationIcon_36x36.png</Android_NotificationIcon36>
@@ -186,7 +186,7 @@
         <Android_ProjectId>ttm-sts</Android_ProjectId>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Android64)'!=''">
-        <VerInfo_Keys>package=com.stalkersts.$(MSBuildProjectName);label=$(MSBuildProjectName);versionCode=165;versionName=20241019;persistent=False;restoreAnyVersion=False;installLocation=preferExternal;largeHeap=False;theme=TitleBar;hardwareAccelerated=true;apiKey=AIzaSyDw7rEEaBz6V_Q-4kDS-df56RjLsecWAII</VerInfo_Keys>
+        <VerInfo_Keys>package=com.stalkersts.$(MSBuildProjectName);label=$(MSBuildProjectName);versionCode=165;versionName=20241019;persistent=False;restoreAnyVersion=False;installLocation=preferExternal;largeHeap=False;theme=TitleBar;hardwareAccelerated=true;apiKey=AIza...</VerInfo_Keys>
         <BT_BuildType>Debug</BT_BuildType>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <Base_Android>true</Base_Android>
@@ -224,7 +224,7 @@
         <PF_KeyStorePass>857D47985FC407DBCF26E56CA4037BF7E41708177EE497C397B90FE18E103C82DB0CA39AE3191C25C1B0572EFACEC331BAF736500464228B162345F0E58822DEC90BF31ED507FA8EBFE9AF23071E1D4492563E441DF9</PF_KeyStorePass>
         <PF_AliasKey>tartu</PF_AliasKey>
         <Android_AppId>1:93784117180:android:8b65f8a9d1c87a6920a5b9</Android_AppId>
-        <Android_ApiKey>AIzaSyDw7rEEaBz6V_Q-4kDS-df56RjLsecWAII</Android_ApiKey>
+        <Android_ApiKey>AIz...</Android_ApiKey>
         <Android_GcmDefaultSenderId>93784117180</Android_GcmDefaultSenderId>
         <Android_ProjectId>tartu-2658a</Android_ProjectId>
         <Android_SplashTileMode>disabled</Android_SplashTileMode>
@@ -385,7 +385,7 @@
         <AUP_CAMERA>false</AUP_CAMERA>
         <AUP_CALL_PHONE>false</AUP_CALL_PHONE>
         <AUP_USE_BIOMETRIC>true</AUP_USE_BIOMETRIC>
-        <VerInfo_Keys>package=com.stalkersts.$(MSBuildProjectName);label=$(MSBuildProjectName);versionCode=93;versionName=2024.09.04;persistent=False;restoreAnyVersion=False;installLocation=preferExternal;largeHeap=False;theme=TitleBar;hardwareAccelerated=true;apiKey=AIzaSyDw7rEEaBz6V_Q-4kDS-df56RjLsecWAII</VerInfo_Keys>
+        <VerInfo_Keys>package=com.stalkersts.$(MSBuildProjectName);label=$(MSBuildProjectName);versionCode=93;versionName=2024.09.04;persistent=False;restoreAnyVersion=False;installLocation=preferExternal;largeHeap=False;theme=TitleBar;hardwareAccelerated=true;apiKey=AIz...</VerInfo_Keys>
         <Android_AppId>1:93784117180:android:8b65f8a9d1c87a6920a5b9</Android_AppId>
         <Android_ApiKey>AIzaSyDw7rEEaBz6V_Q-4kDS-df56RjLsecWAII</Android_ApiKey>
         <Android_GcmDefaultSenderId>93784117180</Android_GcmDefaultSenderId>
@@ -409,7 +409,7 @@
         <AUP_ACCESS_FINE_LOCATION>false</AUP_ACCESS_FINE_LOCATION>
         <AUP_ACCESS_COARSE_LOCATION>false</AUP_ACCESS_COARSE_LOCATION>
         <EL_AdMob>true</EL_AdMob>
-        <VerInfo_Keys>package=com.stalkersts.$(MSBuildProjectName);label=$(MSBuildProjectName);versionCode=180;versionName=20241105;persistent=False;restoreAnyVersion=False;installLocation=preferExternal;largeHeap=False;theme=TitleBar;hardwareAccelerated=true;apiKey=AIzaSyDw7rEEaBz6V_Q-4kDS-df56RjLsecWAII</VerInfo_Keys>
+        <VerInfo_Keys>package=com.stalkersts.$(MSBuildProjectName);label=$(MSBuildProjectName);versionCode=180;versionName=20241105;persistent=False;restoreAnyVersion=False;installLocation=preferExternal;largeHeap=False;theme=TitleBar;hardwareAccelerated=true;apiKey=AIz...</VerInfo_Keys>
         <BT_BuildType>AppStore</BT_BuildType>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
