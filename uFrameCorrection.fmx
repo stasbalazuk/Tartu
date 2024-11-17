@@ -1,0 +1,290 @@
+object FrameCorrectionView: TFrameCorrectionView
+  Align = Top
+  ClipChildren = True
+  ClipParent = True
+  DragMode = dmAutomatic
+  EnableDragHighlight = False
+  Size.Width = 389.000000000000000000
+  Size.Height = 608.000000000000000000
+  Size.PlatformDefault = False
+  OnResize = FrameResize
+  object FrameContainer: TLayout
+    Align = Client
+    Size.Width = 389.000000000000000000
+    Size.Height = 608.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object LinearLayout1: TLinearLayout
+      Align = Contents
+      HeightSize = WrapContent
+      Gravity = None
+      Padding.Left = 8.000000000000000000
+      Padding.Top = 8.000000000000000000
+      Padding.Right = 8.000000000000000000
+      Padding.Bottom = 8.000000000000000000
+      Size.Width = 389.000000000000000000
+      Size.Height = 598.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Orientation = Vertical
+      object lbword: TLabel
+        Align = Top
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 373.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+      end
+      object EditView1: TEditView
+        Tag = -1
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Center
+        Background.Border.Color.Default = xBFC0C0C0
+        Background.Border.Color.Pressed = claNull
+        Background.Border.Color.Focused = xFF0066CC
+        Background.Border.Color.Hovered = claSilver
+        Background.Border.Color.Selected = claNull
+        Background.Border.Color.Checked = claNull
+        Background.Border.Color.Enabled = claNull
+        ClipChildren = True
+        WidthSize = FillParent
+        Enabled = False
+        Padding.Left = 6.000000000000000000
+        Padding.Top = 2.000000000000000000
+        Padding.Right = 6.000000000000000000
+        Padding.Bottom = 2.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Size.Width = 373.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnClick = EditView1Click
+        TextSettings.Gravity = CenterVertical
+        DisableFocusEffect = True
+        ReadOnly = True
+      end
+      object lbword1: TLabel
+        Align = Top
+        Position.X = 8.000000000000000000
+        Position.Y = 71.000000000000000000
+        Size.Width = 373.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Nimetav'
+        TabOrder = 5
+      end
+      object mmo1word: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        ReadOnly = True
+        TextSettings.WordWrap = True
+        Align = Top
+        Margins.Top = 5.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 94.000000000000000000
+        Size.Width = 373.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 369.000000000000000000
+        Viewport.Height = 37.000000000000000000
+      end
+      object lbword2: TLabel
+        Align = Top
+        Margins.Top = 5.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 140.000000000000000000
+        Size.Width = 373.000000000000000000
+        Size.Height = 16.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Omastav'
+        TabOrder = 4
+      end
+      object mmo2word: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        TextSettings.WordWrap = True
+        Align = Top
+        Margins.Top = 5.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 161.000000000000000000
+        Size.Width = 373.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Viewport.Width = 369.000000000000000000
+        Viewport.Height = 37.000000000000000000
+      end
+      object lbExample: TLabel
+        Align = Top
+        Position.X = 8.000000000000000000
+        Position.Y = 202.000000000000000000
+        Size.Width = 373.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Osastav'
+        TabOrder = 9
+      end
+      object mmo3word: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        TextSettings.WordWrap = True
+        Align = Top
+        Margins.Top = 5.000000000000000000
+        Margins.Bottom = 13.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 224.000000000000000000
+        Size.Width = 373.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        Viewport.Width = 369.000000000000000000
+        Viewport.Height = 37.000000000000000000
+      end
+      object mmo4word: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        ReadOnly = True
+        TextSettings.WordWrap = True
+        Align = Top
+        Margins.Top = 5.000000000000000000
+        Margins.Bottom = 13.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 283.000000000000000000
+        Size.Width = 373.000000000000000000
+        Size.Height = 150.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Viewport.Width = 369.000000000000000000
+        Viewport.Height = 146.000000000000000000
+      end
+      object Layout1: TLayout
+        Align = Top
+        Position.X = 8.000000000000000000
+        Position.Y = 446.000000000000000000
+        Size.Width = 373.000000000000000000
+        Size.Height = 67.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 10
+        object SVGIconImage1: TSVGIconImage
+          MultiResBitmap = <
+            item
+            end>
+          Align = Center
+          DisableInterpolation = True
+          Size.Width = 98.000000000000000000
+          Size.Height = 67.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object uTrans: TButton
+        Action = actCorrect
+        Align = Top
+        Enabled = True
+        ImageIndex = -1
+        Margins.Top = 15.000000000000000000
+        Margins.Bottom = 15.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 528.000000000000000000
+        Size.Width = 373.000000000000000000
+        Size.Height = 47.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object btnupd: TButton
+          Action = actUpdate
+          Align = MostRight
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 318.000000000000000000
+          Size.Width = 55.000000000000000000
+          Size.Height = 47.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'refreshtoolbutton'
+          TabOrder = 5
+        end
+        object btnClear: TButton
+          Action = actClean
+          Align = MostLeft
+          Enabled = True
+          ImageIndex = -1
+          Size.Width = 55.000000000000000000
+          Size.Height = 47.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'trashtoolbutton'
+          TabOrder = 6
+        end
+      end
+    end
+  end
+  object AniIndicator1: TAniIndicator
+    Align = Center
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 224
+    Top = 88
+  end
+  object RESTClient1: TRESTClient
+    BaseURL = 'https://api.tartunlp.ai/translation/v2'
+    Params = <>
+    SynchronizedEvents = False
+    UserAgent = 
+      'Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ ' +
+      '(KHTML, like Gecko) Version/3.0 Mobile/1A543a Safari/419.3'
+    Left = 224
+    Top = 64
+  end
+  object RESTRequest1: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTClient1
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'x-api-key'
+        Value = 'public'
+      end
+      item
+        Kind = pkREQUESTBODY
+        Name = 'bodyAB7D4A1F4D4A4C3896673F0946ADA0A8'
+        Value = 
+          '{'#13#10'    "text": "Kuidas l'#1043#164'heb",'#13#10'    "tgt": "rus",'#13#10'    "src": "' +
+          'est"'#13#10'}'
+        ContentTypeStr = 'application/json'
+      end>
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 224
+    Top = 32
+  end
+  object ActionList1: TActionList
+    Left = 224
+    Top = 147
+    object actSpeak: TAction
+      OnExecute = actSpeakExecute
+    end
+    object actCorrect: TAction
+      Text = 'Edit data'
+      OnExecute = actCorrectExecute
+    end
+    object actUpdate: TAction
+      OnExecute = actUpdateExecute
+    end
+    object actClean: TAction
+      OnExecute = actCleanExecute
+    end
+  end
+  object NetHTTPRequest1: TNetHTTPRequest
+    ConnectionTimeout = 0
+    SendTimeout = 0
+    ResponseTimeout = 0
+    Left = 185
+    Top = 337
+  end
+  object NetHTTPClient1: TNetHTTPClient
+    UserAgent = 
+      'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like ' +
+      'Gecko) Chrome/123.0.6312.118 Mobile Safari/537.36'
+    Left = 185
+    Top = 289
+  end
+end

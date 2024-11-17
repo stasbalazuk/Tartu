@@ -1,0 +1,106 @@
+object FrameSettingsWordsView: TFrameSettingsWordsView
+  Size.Width = 447.000000000000000000
+  Size.Height = 105.000000000000000000
+  Size.PlatformDefault = False
+  OnResize = FrameResize
+  object LinearLayout1: TLinearLayout
+    Align = Client
+    HeightSize = WrapContent
+    Gravity = None
+    Padding.Left = 8.000000000000000000
+    Padding.Top = 8.000000000000000000
+    Padding.Right = 8.000000000000000000
+    Padding.Bottom = 8.000000000000000000
+    Size.Width = 447.000000000000000000
+    Size.Height = 121.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Orientation = Vertical
+    object lName: TLabel
+      Align = Top
+      StyledSettings = [Family, Size, Style]
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 431.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claBlue
+      Text = 'Select level :'
+      TabOrder = 0
+    end
+    object Layout1: TLayout
+      Align = Top
+      Locked = True
+      Position.X = 8.000000000000000000
+      Position.Y = 25.000000000000000000
+      Size.Width = 431.000000000000000000
+      Size.Height = 88.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object chkA1: TCheckBox
+        Align = Center
+        StyledSettings = [Family, Size, Style]
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 355.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 88.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'A1'
+        TextSettings.FontColor = claDarkgreen
+        OnChange = chkA1Change
+      end
+      object chkA2: TCheckBox
+        Align = Center
+        StyledSettings = [Family, Size, Style]
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 255.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 88.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'A2'
+        TextSettings.FontColor = claDarkgreen
+        OnChange = chkA2Change
+      end
+      object chkB1: TCheckBox
+        Align = Center
+        StyledSettings = [Family, Size, Style]
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 155.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 88.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'B1'
+        TextSettings.FontColor = claMaroon
+        OnChange = chkB1Change
+      end
+      object chkB2: TCheckBox
+        Align = Center
+        StyledSettings = [Family, Size, Style]
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 55.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 88.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'B2'
+        TextSettings.FontColor = claDarkred
+        OnChange = chkB2Change
+      end
+      object chkC1: TCheckBox
+        Align = Center
+        StyledSettings = [Family, Size, Style]
+        Margins.Left = 55.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 88.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'C1'
+        TextSettings.FontColor = claDarkred
+        OnChange = chkC1Change
+      end
+    end
+  end
+end

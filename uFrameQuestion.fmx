@@ -1,0 +1,35 @@
+object FrameQuestionView: TFrameQuestionView
+  Size.Width = 412.000000000000000000
+  Size.Height = 367.000000000000000000
+  Size.PlatformDefault = False
+  OnResize = FrameResize
+  object LinearLayout1: TLinearLayout
+    Align = Client
+    HeightSize = WrapContent
+    Gravity = None
+    Padding.Left = 8.000000000000000000
+    Padding.Top = 8.000000000000000000
+    Padding.Right = 8.000000000000000000
+    Padding.Bottom = 8.000000000000000000
+    Size.Width = 412.000000000000000000
+    Size.Height = 367.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Orientation = Vertical
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      StyledSettings = [Family, Size, Style]
+      TextSettings.FontColor = claYellow
+      TextSettings.WordWrap = True
+      OnChange = Memo1Change
+      Align = Client
+      Size.Width = 396.000000000000000000
+      Size.Height = 351.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 392.000000000000000000
+      Viewport.Height = 347.000000000000000000
+    end
+  end
+end

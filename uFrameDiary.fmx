@@ -1,0 +1,520 @@
+object FrameDiaryView: TFrameDiaryView
+  Align = Top
+  ClipChildren = True
+  ClipParent = True
+  DragMode = dmAutomatic
+  EnableDragHighlight = False
+  Margins.Right = 5.000000000000000000
+  Size.Width = 362.000000000000000000
+  Size.Height = 597.000000000000000000
+  Size.PlatformDefault = False
+  OnResize = FrameResize
+  object FrameContainer: TLayout
+    Align = Client
+    Size.Width = 362.000000000000000000
+    Size.Height = 597.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object LinearLayout1: TLinearLayout
+      Align = Contents
+      HeightSize = WrapContent
+      Gravity = None
+      Padding.Left = 8.000000000000000000
+      Padding.Top = 8.000000000000000000
+      Padding.Right = 8.000000000000000000
+      Padding.Bottom = 8.000000000000000000
+      Size.Width = 362.000000000000000000
+      Size.Height = 597.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Orientation = Vertical
+      object RecCore: TRectangle
+        Align = Client
+        Size.Width = 346.000000000000000000
+        Size.Height = 581.000000000000000000
+        Size.PlatformDefault = False
+        object tCore: TTabControl
+          Align = Client
+          Size.Width = 346.000000000000000000
+          Size.Height = 581.000000000000000000
+          Size.PlatformDefault = False
+          TabHeight = 49.000000000000000000
+          TabIndex = 0
+          TabOrder = 0
+          TabPosition = PlatformDefault
+          Sizes = (
+            346s
+            532s
+            346s
+            532s)
+          object uCalendar: TTabItem
+            CustomIcon = <
+              item
+              end>
+            IsSelected = True
+            Size.Width = 74.000000000000000000
+            Size.Height = 49.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = ''
+            TabOrder = 0
+            Text = 'uCalendar'
+            ExplicitSize.cx = 232.000000000000000000
+            ExplicitSize.cy = 49.000000000000000000
+            object Layout1: TLayout
+              Align = Top
+              Size.Width = 346.000000000000000000
+              Size.Height = 42.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object lFirst: TLabel
+                Align = Center
+                StyledSettings = [Family, Size, Style]
+                Size.Width = 358.000000000000000000
+                Size.Height = 23.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.FontColor = claDarkgreen
+                TextSettings.HorzAlign = Center
+                TabOrder = 0
+              end
+            end
+            object Layout3: TLayout
+              Align = Client
+              Size.Width = 346.000000000000000000
+              Size.Height = 490.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object cal1: TCalendar
+                Align = Client
+                Date = 45552.000000000000000000
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 336.000000000000000000
+                Size.Height = 480.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'calendarstyle'
+                TabOrder = 0
+                OnApplyStyleLookup = cal1ApplyStyleLookup
+                OnChange = cal1Change
+                OnDateSelected = cal1DateSelected
+              end
+            end
+          end
+          object uMessage: TTabItem
+            CustomIcon = <
+              item
+              end>
+            IsSelected = False
+            Size.Width = 74.000000000000000000
+            Size.Height = 49.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = ''
+            TabOrder = 0
+            Text = 'uMessage'
+            ExplicitSize.cx = 232.000000000000000000
+            ExplicitSize.cy = 49.000000000000000000
+            object Layout4: TLayout
+              Align = Top
+              Size.Width = 346.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object EditView1: TEditView
+                Tag = -1
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Client
+                Background.Border.Color.Default = xBFC0C0C0
+                Background.Border.Color.Pressed = claNull
+                Background.Border.Color.Focused = xFF0066CC
+                Background.Border.Color.Hovered = claSilver
+                Background.Border.Color.Selected = claNull
+                Background.Border.Color.Checked = claNull
+                Background.Border.Color.Enabled = claNull
+                ClipChildren = True
+                WidthSize = FillParent
+                Padding.Left = 6.000000000000000000
+                Padding.Top = 2.000000000000000000
+                Padding.Right = 6.000000000000000000
+                Padding.Bottom = 2.000000000000000000
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Size.Width = 336.000000000000000000
+                Size.Height = 45.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                OnClick = EditView1Click
+                TextHint = 'Language selection'
+                TextSettings.Gravity = CenterVertical
+                DisableFocusEffect = True
+                object TextView1: TTextView
+                  Align = MostRight
+                  Clickable = True
+                  WidthSize = WrapContent
+                  HitTest = True
+                  Size.Width = 18.000000000000000000
+                  Size.Height = 41.000000000000000000
+                  Size.PlatformDefault = False
+                  Position.X = 312.000000000000000000
+                  Position.Y = 2.000000000000000000
+                  TabOrder = 0
+                  Drawable.SizeWidth = 18
+                  Drawable.SizeHeight = 18
+                  Drawable.Padding = 8
+                  Drawable.Position = Center
+                  Drawable.ItemDefault.Kind = AccessoryBitmap
+                  Drawable.ItemDefault.Accessory.Accessory = Down
+                  Drawable.ItemDefault.Accessory.Color = claSilver
+                end
+                object TextView2: TTextView
+                  Align = Right
+                  Clickable = True
+                  WidthSize = WrapContent
+                  Margins.Right = 8.000000000000000000
+                  Visible = False
+                  HitTest = True
+                  Size.Width = 18.000000000000000000
+                  Size.Height = 37.000000000000000000
+                  Size.PlatformDefault = False
+                  Position.X = 357.000000000000000000
+                  Position.Y = 2.000000000000000000
+                  TabOrder = 1
+                  Drawable.SizeWidth = 18
+                  Drawable.SizeHeight = 18
+                  Drawable.Padding = 8
+                  Drawable.Position = Center
+                  Drawable.ItemDefault.Kind = AccessoryBitmap
+                  Drawable.ItemDefault.Accessory.Accessory = Cross
+                  Drawable.ItemDefault.Accessory.Color = claSilver
+                end
+              end
+            end
+            object Layout5: TLayout
+              Align = Bottom
+              Position.Y = 489.000000000000000000
+              Size.Width = 346.000000000000000000
+              Size.Height = 43.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object btnTranslate: TCornerButton
+                Action = actTranslate
+                Align = Client
+                Enabled = True
+                ImageIndex = -1
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 3.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 3.000000000000000000
+                Sides = [Top, Left, Bottom, Right]
+                Size.Width = 336.000000000000000000
+                Size.Height = 37.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 4
+                XRadius = 5.000000000000000000
+                YRadius = 5.000000000000000000
+                object Path1: TPath
+                  Align = Center
+                  Data.Path = {
+                    3B0000000000000072799841F55B954101000000BA5A8741FE65664101000000
+                    03786C41F55B954100000000E9B7724117488F4101000000EA84954117488F41
+                    00000000C05B874197FFAF4102000000B3EA614197FFAF4102000000D26F3D41
+                    A1D69D4102000000D26F3D41C05B874102000000D26F3D41B3EA614102000000
+                    BEC16141D26F3D4102000000C05B8741D26F3D410200000027C29D41D26F3D41
+                    0200000097FFAF41BEC161410200000097FFAF41C05B87410200000097FFAF41
+                    A1D69D4102000000A1D69D4197FFAF4102000000C05B874197FFAF4103000000
+                    C05B874197FFAF4100000000D7A3A04000000040010000003D0A0F4100000040
+                    02000000F62830410000004002000000F62840415400404002000000295C3F41
+                    01A4A04001000000295C3F413D0A0F4102000000F6284041F628304102000000
+                    F6283041F6284041020000003D0A0F41295C3F4101000000D7A3A040295C3F41
+                    0200000000004040000040410200000000000040000030410200000000000040
+                    3DE10E4101000000000000400052A04002000000000000402A00404002000000
+                    000040400000004002000000D7A3A0400000004003000000D7A3A04000000040
+                    00000000C42510410534BB400100000003609E400534BB40000000000000DF40
+                    FC6FA540010000000000DF407632BB4000000000A8A9FF40F8DFBA4002000000
+                    A8A9FF40F8DFF2400200000089D2D3404428104102000000F90F9E4044281041
+                    000000009329104100291041020000007F7B044100291041020000005AD8F340
+                    85EB0941020000000820E5400000004100000000000000400000704102000000
+                    00000040C3F5964102000000F628A4400000B04102000000000010410000B041
+                    010000006666FE400000A241000000000000B04100001041020000000000B041
+                    F628A44002000000C3F596410000004002000000000070410000004001000000
+                    6666804100007040}
+                  Fill.Kind = None
+                  Size.Width = 34.000000000000000000
+                  Size.Height = 34.000000000000000000
+                  Size.PlatformDefault = False
+                  OnClick = actSpeakExecute
+                  object ShadowEffect1: TShadowEffect
+                    Distance = 3.000000000000000000
+                    Direction = 45.000000000000000000
+                    Softness = 0.550000011920929000
+                    Opacity = 0.680000007152557400
+                    ShadowColor = claYellowgreen
+                  end
+                end
+                object btnGoto: TButton
+                  Action = actGoto
+                  Align = Left
+                  Enabled = True
+                  ImageIndex = -1
+                  Margins.Left = 3.000000000000000000
+                  Margins.Top = 3.000000000000000000
+                  Margins.Right = 3.000000000000000000
+                  Margins.Bottom = 3.000000000000000000
+                  Position.X = 3.000000000000000000
+                  Position.Y = 3.000000000000000000
+                  Size.Width = 34.000000000000000000
+                  Size.Height = 31.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  object pthGoto: TPath
+                    Align = Center
+                    Data.Path = {
+                      0C00000000000000E17AA443BF58F24101000000555595430000802801000000
+                      E17A24436666064301000000BF58F241000080280100000000008028BF58F241
+                      0100000066660643E17A244301000000000080285555954301000000BF58F241
+                      E17AA44301000000E17A24435C8F42430100000055559543E17AA44301000000
+                      E17AA44355559543010000005C8F4243E17A2443}
+                    Size.Width = 28.000000000000000000
+                    Size.Height = 28.000000000000000000
+                    Size.PlatformDefault = False
+                    OnClick = actGotoExecute
+                  end
+                end
+                object btnSpeak: TCornerButton
+                  Action = actSpeak
+                  Align = Right
+                  Enabled = True
+                  StyledSettings = [Family, Size, Style]
+                  ImageIndex = -1
+                  Margins.Left = 3.000000000000000000
+                  Margins.Top = 3.000000000000000000
+                  Margins.Right = 3.000000000000000000
+                  Margins.Bottom = 3.000000000000000000
+                  Position.X = 299.000000000000000000
+                  Position.Y = 3.000000000000000000
+                  Sides = [Top, Left, Bottom, Right]
+                  Size.Width = 34.000000000000000000
+                  Size.Height = 31.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 5
+                  TextSettings.FontColor = claYellowgreen
+                  XRadius = 3.000000000000000000
+                  YRadius = 3.000000000000000000
+                  object pthSpk: TPath
+                    Align = Center
+                    Data.Path = {
+                      2000000000000000000098410000C040020000000000A4410000F04002000000
+                      0000A84100002041020000000000A84100004041020000000000A84100006041
+                      020000000000A441000084410200000000009841000090410000000000008041
+                      EBFF0F410200000000008441EBFF174102000000000088410000284102000000
+                      0000884100004041020000000000884100005841020000000000844100006841
+                      0200000000008041000070410000000000004040000028410100000000004040
+                      00005841020000000000404071AC694102000000000060400000784102000000
+                      0000B04000008041020000000000F0400000844102000000000010410000A841
+                      02000000000040410000A84102000000000060410000A8410200000000006041
+                      0000404002000000000040410000404002000000000010410000404002000000
+                      0000F0400000F040020000000000B04000000041020000000000604000000841
+                      0200000000004040AE5316410200000000004040000028410300000000004040
+                      00002841}
+                    Fill.Kind = None
+                    Size.Width = 21.000000000000000000
+                    Size.Height = 21.000000000000000000
+                    Size.PlatformDefault = False
+                    OnClick = actSpeakExecute
+                  end
+                end
+              end
+            end
+            object Layout6: TLayout
+              Align = Client
+              Size.Width = 346.000000000000000000
+              Size.Height = 439.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              object mmo_src: TMemo
+                Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+                DataDetectorTypes = []
+                StyledSettings = [Family]
+                TextSettings.Font.Size = 14.000000000000000000
+                TextSettings.Font.StyleExt = {00070000000000000004000000}
+                TextSettings.FontColor = claWhite
+                TextSettings.WordWrap = True
+                OnChange = mmo_srcChange
+                Align = Client
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Size.Width = 336.000000000000000000
+                Size.Height = 204.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Viewport.Width = 332.000000000000000000
+                Viewport.Height = 200.000000000000000000
+              end
+              object mmo_trg: TMemo
+                Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+                DataDetectorTypes = []
+                ReadOnly = True
+                StyledSettings = [Family, Size, Style]
+                TextSettings.FontColor = claYellow
+                TextSettings.WordWrap = True
+                Align = Bottom
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 240.000000000000000000
+                Size.Width = 336.000000000000000000
+                Size.Height = 194.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Viewport.Width = 332.000000000000000000
+                Viewport.Height = 190.000000000000000000
+              end
+              object Splitter1: TSplitter
+                Align = Bottom
+                Cursor = crVSplit
+                MinSize = 20.000000000000000000
+                Position.Y = 231.000000000000000000
+                Size.Width = 346.000000000000000000
+                Size.Height = 4.000000000000000000
+                Size.PlatformDefault = False
+              end
+              object lCount: TLabel
+                Align = Bottom
+                StyledSettings = [Family, Style]
+                Position.Y = 214.000000000000000000
+                Size.Width = 346.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.FontColor = claDarkslategray
+                Text = '  Number of characters:           0/7000'
+                TabOrder = 2
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  object AniIndicator1: TAniIndicator
+    Align = Center
+  end
+  object ActionList1: TActionList
+    Left = 248
+    Top = 347
+    object actSpeak: TAction
+      OnExecute = actSpeakExecute
+    end
+    object actGoto: TAction
+      OnExecute = actGotoExecute
+    end
+    object actSave: TAction
+      OnExecute = actSaveExecute
+    end
+    object actTranslate: TAction
+      OnExecute = actTranslateExecute
+    end
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 248
+    Top = 296
+  end
+  object RESTClient1: TRESTClient
+    BaseURL = 'https://api.tartunlp.ai/translation/v2'
+    Params = <>
+    SynchronizedEvents = False
+    UserAgent = 
+      'Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ ' +
+      '(KHTML, like Gecko) Version/3.0 Mobile/1A543a Safari/419.3'
+    Left = 248
+    Top = 248
+  end
+  object RESTRequest1: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTClient1
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'x-api-key'
+        Value = 'public'
+      end
+      item
+        Kind = pkREQUESTBODY
+        Name = 'bodyAB7D4A1F4D4A4C3896673F0946ADA0A8'
+        Value = 
+          '{'#13#10'    "text": "Kuidas l'#1043#164'heb",'#13#10'    "tgt": "rus",'#13#10'    "src": "' +
+          'est"'#13#10'}'
+        ContentTypeStr = 'application/json'
+      end>
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 248
+    Top = 200
+  end
+  object FDMemTable1: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'EventDateTime'
+        DataType = ftDateTime
+      end
+      item
+        Name = 'EventTitle'
+        DataType = ftString
+        Size = 512
+      end>
+    IndexDefs = <>
+    IndexFieldNames = 'EventDateTime'
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvPersistent, rvSilentMode]
+    ResourceOptions.Persistent = True
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 128
+    Top = 224
+    Content = {
+      414442531000000089010000FF00010001FF02FF03040016000000460044004D
+      0065006D005400610062006C006500310005000A0000005400610062006C0065
+      00060000000000070000080032000000090000FF0AFF0B04001A000000450076
+      0065006E0074004400610074006500540069006D00650005001A000000450076
+      0065006E0074004400610074006500540069006D0065000C00010000000E000D
+      000F000110000111000112000113000114000115001A0000004500760065006E
+      0074004400610074006500540069006D006500FEFF0B04001400000045007600
+      65006E0074005400690074006C0065000500140000004500760065006E007400
+      5400690074006C0065000C00020000000E0016001700000200000F0001100001
+      1100011200011300011400011500140000004500760065006E00740054006900
+      74006C006500180000020000FEFEFF19FEFF1AFEFF1BFF1C1D0000000000FF1E
+      00000000A459C0F7CC4201000400000074657374FEFEFEFEFEFF1FFEFF202100
+      01000000FF22FEFEFE0E004D0061006E0061006700650072001E005500700064
+      0061007400650073005200650067006900730074007200790012005400610062
+      006C0065004C006900730074000A005400610062006C00650008004E0061006D
+      006500140053006F0075007200630065004E0061006D0065000A005400610062
+      0049004400240045006E0066006F0072006300650043006F006E007300740072
+      00610069006E00740073001E004D0069006E0069006D0075006D004300610070
+      0061006300690074007900180043006800650063006B004E006F0074004E0075
+      006C006C00140043006F006C0075006D006E004C006900730074000C0043006F
+      006C0075006D006E00100053006F007500720063006500490044001400640074
+      004400610074006500540069006D006500100044006100740061005400790070
+      0065001400530065006100720063006800610062006C006500120041006C006C
+      006F0077004E0075006C006C000800420061007300650014004F0041006C006C
+      006F0077004E0075006C006C0012004F0049006E005500700064006100740065
+      0010004F0049006E00570068006500720065001A004F0072006900670069006E
+      0043006F006C004E0061006D00650018006400740041006E0073006900530074
+      00720069006E0067000800530069007A006500140053006F0075007200630065
+      00530069007A0065001C0043006F006E00730074007200610069006E0074004C
+      00690073007400100056006900650077004C006900730074000E0052006F0077
+      004C00690073007400060052006F0077000A0052006F0077004900440010004F
+      0072006900670069006E0061006C001800520065006C006100740069006F006E
+      004C006900730074001C0055007000640061007400650073004A006F00750072
+      006E0061006C001200530061007600650050006F0069006E0074000E00430068
+      0061006E00670065007300}
+  end
+end
