@@ -1,0 +1,42 @@
+DW.Network.Types, DW.Network.Multicast, DW.Network.Provider
+
+
+procedure TForm1.DumpLocalAddresses;
+var
+  LLocalAddress: TIPAddress;
+begin
+  LocalIPMemo.Lines.Clear;
+  for LLocalAddress in NetworkProvider.GetLocalAddresses do
+    LocalIPMemo.Lines.Add(Format('%s on %s (index: %d)', [LLocalAddress.IP, LLocalAddress.InterfaceName, LLocalAddress.InterfaceIndex]));
+end;
+
+send email
+
+procedure TForm1.CreateEmail(const Recipient, Subject, Content, Attachment: string);
+var
+  JRecipient: TJavaObjectArray<JString>;
+  Intent: JIntent;
+  Uri: Jnet_Uri;
+  AttachmentFile: JFile;
+begin
+  JRecipient := TJavaObjectArray<JString>.Create(1);
+  JRecipient.Items[0] := StringToJString(Recipient);
+
+  Intent := TJIntent.Create;
+  Intent.setAction(TJIntent.JavaClass.ACTION_SEND);
+  Intent.setFlags(TJIntent.JavaClass.FLAG_ACTIVITY_NEW_TASK);
+  Intent.putExtra(TJIntent.JavaClass.EXTRA_EMAIL, JRecipient);
+  Intent.putExtra(TJIntent.JavaClass.EXTRA_SUBJECT, StringToJString(Subject));
+  Intent.putExtra(TJIntent.JavaClass.EXTRA_TEXT, StringToJString(Content));
+
+  if Attachment <> '' then
+  begin
+    AttachmentFile := TJFile.JavaClass.init(StringToJString(Attachment));
+    Uri := TJnet_Uri.JavaClass.fromFile(AttachmentFile);
+    Intent.putExtra(TJIntent.JavaClass.EXTRA_STREAM, TJParcelable.Wrap((Uri as ILocalObject).GetObjectID));
+  end;
+
+  Intent.setType(StringToJString('vnd.android.cursor.dir/email'));
+
+  SharedActivity.startActivity(Intent);
+end;

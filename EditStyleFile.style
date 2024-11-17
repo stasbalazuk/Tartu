@@ -1,0 +1,24 @@
+object TStyleContainer
+  StyleLookup = 'transpeditstyle'
+  StyleData = {
+    <Resource>
+      <TStyleName="TEdit" Appearance="Normal">
+        <TEdit>
+          <SubComponent>
+            <background>
+              <Rect>
+                <Stroke>
+                  <Color>AARRGGBB</Color>
+                  <Thickness>0</Thickness>
+                </Stroke>
+                <Fill>
+                  <Color>#00000000</Color> <!-- Прозрачный цвет -->
+                </Fill>
+              </Rect>
+            </background>
+          </SubComponent>
+        </TEdit>
+      </TStyleName>
+    </Resource>
+  }
+end
